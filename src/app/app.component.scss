@@ -13,6 +13,11 @@ img {
     width: 25%;
 }
 input {
-    display: block;
     margin: 0 auto;
+}
+.error-output {
+    margin-top: 5px;
+    font-size: 12px;
+    font-style: italic;
+    color: red;
 }
