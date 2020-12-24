@@ -7,7 +7,8 @@
   </div>
   <div>
     <!-- bind the input from the user to element-->
-    <input [(ngModel)]="userName">
+    <input [(ngModel)]="userName" (input)="onInput($event)">
+    <span class="error-output">{{this.nameError}}</span>
   </div>
 </div>
 <router-outlet></router-outlet>
