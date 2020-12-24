@@ -3,7 +3,7 @@
   <h1>{{this.title}}</h1>
   <div>
      <!-- property binding -->
-    <img [src]="imgUrl" alt="company logo">
+    <img [src]="imgUrl" alt="company logo" (click)= "onClick($event)">
   </div>
 </div>
 <router-outlet></router-outlet>
