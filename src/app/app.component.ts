@@ -10,6 +10,7 @@ export class AppComponent {
   imgUrl = '../assets/BL_logo_square_jpg.jpg'
   // Webpage url
   url = "https://www.bridgelabz.com/"
+  userName: string = "";
   // For implementing one way binding
   ngOnInit(): void {
     this.title = "Hello from the bridgelabz!";

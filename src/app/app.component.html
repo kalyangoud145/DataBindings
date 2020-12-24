@@ -1,9 +1,13 @@
 <div class="maincontent">
-  <!-- template for one way binding -->
-  <h1>{{this.title}}</h1>
+  <!-- template for  binding -->
+  <h1>Hello {{this.userName}} from the Angular</h1>
   <div>
-     <!-- property binding -->
-    <img [src]="imgUrl" alt="company logo" (click)= "onClick($event)">
+    <!-- property binding -->
+    <img [src]="imgUrl" alt="company logo" (click)="onClick($event)">
+  </div>
+  <div>
+    <!-- bind the input from the user to element-->
+    <input [(ngModel)]="userName">
   </div>
 </div>
 <router-outlet></router-outlet>
